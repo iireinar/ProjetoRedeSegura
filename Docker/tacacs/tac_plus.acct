@@ -1,0 +1,29 @@
+accounting file = /var/log/tac_plus.acct
+
+key = alouvc
+
+group = admin {
+        default service = permit
+        service = exec {
+                priv-lvl = 15
+                }
+        }
+
+user = joao {
+    name = "Joao do Santos"
+    member = admin
+    login = des ko8i3PRuFO4HI
+                service = junos-exec {
+                        local-user-name = remote-admin
+        }
+}
+
+user = ranieri {
+    name = "Ranieri Geroldi"
+    member = admin
+    login = des ANrVgKZtJMzvA
+                service = junos-exec {
+                        local-user-name = remote-admin
+        }
+}
+

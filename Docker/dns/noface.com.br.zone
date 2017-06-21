@@ -1,0 +1,18 @@
+$TTL 1h
+; -----------------------------------------------------------------------------
+; SOA for noface.com.br.com
+; -----------------------------------------------------------------------------
+
+@ IN SOA ns1.noface.com.br. noface.com.br. (
+            2016021501      ; Serial
+            1h              ; Refresh
+            15m             ; Retry
+            1d              ; Expire
+            1h );           ; Negative Cache TTL
+
+                              IN   NS    ns1.noface.com.br.
+ns1.noface.com.br.            IN   A     177.44.248.219
+dmz-ssh.noface.com.br.        IN   A     177.44.248.218
+alunos-01-ssh.noface.com.br.  IN   A     177.44.248.18
+internal-site.noface.com.br.  IN   A     177.44.248.220
+external-site.noface.com.br.  IN   A     177.44.248.221

@@ -1,0 +1,16 @@
+$TTL 1h
+; -----------------------------------------------------------------------------
+; SOA for noface.com.br.com
+; -----------------------------------------------------------------------------
+
+@ IN SOA ns1.noface.com.br. noface.com.br. (
+            2016021501      ; Serial
+            1h              ; Refresh
+            15m             ; Retry
+            1d              ; Expire
+            1h );           ; Negative Cache TTL
+
+                              IN   NS    ns1.noface.com.br.
+ns1.noface.com.br.            IN   A     179.0.0.2
+site.noface.com.br.           IN   A     177.44.248.219
+site2.noface.com.br.          IN   A     179.0.0.3
